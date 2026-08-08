@@ -1,5 +1,6 @@
 function Sidebar(){
     return (
+        <>
         <div className="Sidebar">
             <ul>
                 <li>Students</li>
@@ -7,6 +8,7 @@ function Sidebar(){
                 <li>Enrollments</li>
             </ul>
         </div>
+        </>
     );
 }
 
