@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer className="footer text-2xl text-center text-gray-500 py-4"> 
       <p>&copy; 2026 My Website - Eusebio. All rights reserved.</p>
     </footer>
   );
