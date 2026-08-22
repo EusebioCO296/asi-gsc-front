@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
-import Sidebar from "../components/Sidebar";
+import MainLayout from "../layout/MainLayout";
 
 
 function Students() {
@@ -12,7 +12,7 @@ function Students() {
         <Header title={"Estudiantes"} description={"Gestión de estudiantes registrados"} txtButton={"Nuevo estudiante"}/>
       </header>
       <main className="flex-1 p-4">
-        <Sidebar/>
+        <MainLayout/>
       </main>
       <footer className="mt-4"><Footer/></footer>  
     </div>
