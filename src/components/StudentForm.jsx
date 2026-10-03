@@ -10,16 +10,11 @@ function StudentForm({student, onSave}) {
     onSave(formData);
   }
 
-  async function handleCreate(event) {
-    event.preventDefault();
-    await createStudent(formData);
-  }
-
   return (
     <div className = "flex justify-center items-center inset-0 z-50 bg-black/40">
       <div className = "bg-gray-300 rounded-xl w-full max-w-lg p-6">
         <h2 className="text-2xl font bold mb-6">Estudiantes</h2>
-        <form className="space-y-4">
+        <form className="space-y-4" on Submit = {handleSubmit}>
           <input
             type = "text"
             name = "firstName"

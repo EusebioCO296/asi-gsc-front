@@ -9,5 +9,19 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss()
-  ]
+  ],
+
+  server: {
+    proxy: {
+      '/backend': {
+      target: 'http://localhost:8080', // Replace with your backend URL
+      
+      changeOrigin: true,
+
+      secure: false,
+
+      rewrite: (path) => path.replace(/^\/backend/, '')
+      }
+    }
+  }
 })

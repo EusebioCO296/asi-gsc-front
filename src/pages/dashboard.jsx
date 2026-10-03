@@ -1,19 +1,9 @@
-import Sidebar from "../components/Sidebar";
-import StatCard from "../components/StatCard";
-import Footer from "../components/Footer";
 
 function Dashboard() {
   return (
     <>
-    <div className="Dashboard">  
+    <div className="text-2xl font-bold mb-4">  
       <header><h1>Dashboard</h1></header>
-      <Sidebar />
-      <StatCard title="Students" total="50" />
-      <StatCard title="Courses" total="10" />
-      <StatCard title="Enrollments" total="145" />
-      <footer>
-        <Footer />
-      </footer>
     </div>
     </>
   );
